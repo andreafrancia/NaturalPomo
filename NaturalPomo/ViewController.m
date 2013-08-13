@@ -7,23 +7,73 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import "Timer.h"
+@implementation NSSet(touches)
+-(CGPoint) locationInView:(UIView*) view{
+    UITouch *touch = [self anyObject];
+    return [touch locationInView:view];
+}
 @end
 
-@implementation ViewController
+@implementation ViewController  {
+    Timer * timer;
+    CGPoint gestureStartPoint;
+}
+
+-(NSTimeInterval)secondsSinceEpoch;
+{
+    return [[NSDate date]timeIntervalSince1970];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    timer = [Timer new];
+    timer.clock = self;
+    [self refresh];
+	[NSTimer scheduledTimerWithTimeInterval:0.1
+                                     target:self
+                                   selector:@selector(refresh)
+                                   userInfo:nil
+                                    repeats:YES];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)refresh
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.display.text = timer.displayText;
+}
+
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [timer ungrab];
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [timer ungrab];
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    gestureStartPoint = [touches locationInView:self.view];
+    [timer grab];
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    CGFloat move = [self movementFromGestureStrartingPoint:touches];
+    
+    CGFloat portionOfTheScreenSwiped = move / 320.0;
+    CGFloat secondsForAScreenWideSwipe = 20 * 60;
+    CGFloat secondsSwiped = portionOfTheScreenSwiped * secondsForAScreenWideSwipe;
+    
+    [timer rotateBySeconds: secondsSwiped];
+}
+
+-(CGFloat) movementFromGestureStrartingPoint:(NSSet*) touches
+{
+    CGPoint currentPosition = [touches locationInView:self.view];
+    return currentPosition.x - gestureStartPoint.x;
 }
 
 @end

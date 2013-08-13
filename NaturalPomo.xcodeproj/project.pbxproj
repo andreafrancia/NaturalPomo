@@ -22,7 +22,10 @@
 		65C98F4217BAD1410001689D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1C17BAD1400001689D /* UIKit.framework */; };
 		65C98F4317BAD1410001689D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1E17BAD1400001689D /* Foundation.framework */; };
 		65C98F4B17BAD1410001689D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C98F4917BAD1410001689D /* InfoPlist.strings */; };
-		65C98F4E17BAD1410001689D /* NaturalPomoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F4D17BAD1410001689D /* NaturalPomoTests.m */; };
+		65C98F4E17BAD1410001689D /* ADischargedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F4D17BAD1410001689D /* ADischargedTimerTests.m */; };
+		65C98F5917BAD1E80001689D /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
+		65C98F5A17BAD1E80001689D /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
+		65C98F5D17BAD8C60001689D /* AChargedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +59,10 @@
 		65C98F4017BAD1410001689D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		65C98F4817BAD1410001689D /* NaturalPomoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NaturalPomoTests-Info.plist"; sourceTree = "<group>"; };
 		65C98F4A17BAD1410001689D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		65C98F4C17BAD1410001689D /* NaturalPomoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaturalPomoTests.h; sourceTree = "<group>"; };
-		65C98F4D17BAD1410001689D /* NaturalPomoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaturalPomoTests.m; sourceTree = "<group>"; };
+		65C98F4D17BAD1410001689D /* ADischargedTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADischargedTimerTests.m; sourceTree = "<group>"; };
+		65C98F5717BAD1E80001689D /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		65C98F5817BAD1E80001689D /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AChargedTimerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,8 @@
 				65C98F3517BAD1400001689D /* ViewController.m */,
 				65C98F3717BAD1400001689D /* ViewController.xib */,
 				65C98F2317BAD1400001689D /* Supporting Files */,
+				65C98F5717BAD1E80001689D /* Timer.h */,
+				65C98F5817BAD1E80001689D /* Timer.m */,
 			);
 			path = NaturalPomo;
 			sourceTree = "<group>";
@@ -144,8 +151,8 @@
 		65C98F4617BAD1410001689D /* NaturalPomoTests */ = {
 			isa = PBXGroup;
 			children = (
-				65C98F4C17BAD1410001689D /* NaturalPomoTests.h */,
-				65C98F4D17BAD1410001689D /* NaturalPomoTests.m */,
+				65C98F4D17BAD1410001689D /* ADischargedTimerTests.m */,
+				65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */,
 				65C98F4717BAD1410001689D /* Supporting Files */,
 			);
 			path = NaturalPomoTests;
@@ -273,6 +280,7 @@
 				65C98F2917BAD1400001689D /* main.m in Sources */,
 				65C98F2D17BAD1400001689D /* AppDelegate.m in Sources */,
 				65C98F3617BAD1400001689D /* ViewController.m in Sources */,
+				65C98F5917BAD1E80001689D /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C98F4E17BAD1410001689D /* NaturalPomoTests.m in Sources */,
+				65C98F4E17BAD1410001689D /* ADischargedTimerTests.m in Sources */,
+				65C98F5A17BAD1E80001689D /* Timer.m in Sources */,
+				65C98F5D17BAD8C60001689D /* AChargedTimerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
