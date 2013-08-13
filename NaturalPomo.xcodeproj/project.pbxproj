@@ -26,6 +26,10 @@
 		65C98F5917BAD1E80001689D /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
 		65C98F5A17BAD1E80001689D /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
 		65C98F5D17BAD8C60001689D /* AChargedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */; };
+		65FC903917BAE71C006C0112 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903817BAE71C006C0112 /* Default@2x.png */; };
+		65FC903B17BAE71F006C0112 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903A17BAE71F006C0112 /* Default.png */; };
+		65FC903D17BAE787006C0112 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903C17BAE787006C0112 /* icon.png */; };
+		65FC903F17BAE78B006C0112 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903E17BAE78B006C0112 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		65C98F5717BAD1E80001689D /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		65C98F5817BAD1E80001689D /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AChargedTimerTests.m; sourceTree = "<group>"; };
+		65FC903817BAE71C006C0112 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		65FC903A17BAE71F006C0112 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		65FC903C17BAE787006C0112 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		65FC903E17BAE78B006C0112 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,10 @@
 		65C98F1017BAD1400001689D = {
 			isa = PBXGroup;
 			children = (
+				65FC903E17BAE78B006C0112 /* icon@2x.png */,
+				65FC903C17BAE787006C0112 /* icon.png */,
+				65FC903A17BAE71F006C0112 /* Default.png */,
+				65FC903817BAE71C006C0112 /* Default@2x.png */,
 				65C98F2217BAD1400001689D /* NaturalPomo */,
 				65C98F4617BAD1410001689D /* NaturalPomoTests */,
 				65C98F1B17BAD1400001689D /* Frameworks */,
@@ -243,6 +255,10 @@
 				65C98F3117BAD1400001689D /* Default@2x.png in Resources */,
 				65C98F3317BAD1400001689D /* Default-568h@2x.png in Resources */,
 				65C98F3917BAD1400001689D /* ViewController.xib in Resources */,
+				65FC903917BAE71C006C0112 /* Default@2x.png in Resources */,
+				65FC903B17BAE71F006C0112 /* Default.png in Resources */,
+				65FC903D17BAE787006C0112 /* icon.png in Resources */,
+				65FC903F17BAE78B006C0112 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +479,7 @@
 				65C98F5317BAD1410001689D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65C98F5417BAD1410001689D /* Build configuration list for PBXNativeTarget "NaturalPomoTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +488,7 @@
 				65C98F5617BAD1410001689D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
