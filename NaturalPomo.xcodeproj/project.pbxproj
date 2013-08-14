@@ -11,6 +11,22 @@
 		65C64EFB17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C64EFA17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m */; };
 		65C64F4617BB957D0041EEB8 /* alarm-clock-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65C64F4517BB957D0041EEB8 /* alarm-clock-1.wav */; };
 		65C64F4B17BB964E0041EEB8 /* PomodoroRingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C64F4A17BB964E0041EEB8 /* PomodoroRingTests.m */; };
+		65C64F4E17BB98F80041EEB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F2817BAD1400001689D /* main.m */; };
+		65C64F4F17BB98F80041EEB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F2C17BAD1400001689D /* AppDelegate.m */; };
+		65C64F5017BB98F80041EEB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F3517BAD1400001689D /* ViewController.m */; };
+		65C64F5117BB98F80041EEB8 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
+		65C64F5317BB98F80041EEB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FC904017BAED45006C0112 /* AudioToolbox.framework */; };
+		65C64F5417BB98F80041EEB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1C17BAD1400001689D /* UIKit.framework */; };
+		65C64F5517BB98F80041EEB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1E17BAD1400001689D /* Foundation.framework */; };
+		65C64F5617BB98F80041EEB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F2017BAD1400001689D /* CoreGraphics.framework */; };
+		65C64F5817BB98F80041EEB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C98F2517BAD1400001689D /* InfoPlist.strings */; };
+		65C64F5917BB98F80041EEB8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C98F2E17BAD1400001689D /* Default.png */; };
+		65C64F5A17BB98F80041EEB8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C98F3017BAD1400001689D /* Default@2x.png */; };
+		65C64F5B17BB98F80041EEB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C98F3217BAD1400001689D /* Default-568h@2x.png */; };
+		65C64F5C17BB98F80041EEB8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C98F3717BAD1400001689D /* ViewController.xib */; };
+		65C64F5D17BB98F80041EEB8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903C17BAE787006C0112 /* icon.png */; };
+		65C64F5E17BB98F80041EEB8 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903E17BAE78B006C0112 /* icon@2x.png */; };
+		65C64F5F17BB98F80041EEB8 /* alarm-clock-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65C64F4517BB957D0041EEB8 /* alarm-clock-1.wav */; };
 		65C98F1D17BAD1400001689D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1C17BAD1400001689D /* UIKit.framework */; };
 		65C98F1F17BAD1400001689D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1E17BAD1400001689D /* Foundation.framework */; };
 		65C98F2117BAD1400001689D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F2017BAD1400001689D /* CoreGraphics.framework */; };
@@ -50,6 +66,8 @@
 		65C64EFA17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AChargedReleasedTimerTests.m; sourceTree = "<group>"; };
 		65C64F4517BB957D0041EEB8 /* alarm-clock-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-clock-1.wav"; sourceTree = "<group>"; };
 		65C64F4A17BB964E0041EEB8 /* PomodoroRingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroRingTests.m; sourceTree = "<group>"; };
+		65C64F6317BB98F80041EEB8 /* NaturalPomo copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NaturalPomo copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C64F6417BB98F80041EEB8 /* NaturalPomo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NaturalPomo copy-Info.plist"; path = "/Users/andrea/Desktop/NaturalPomo/NaturalPomo copy-Info.plist"; sourceTree = "<absolute>"; };
 		65C98F1917BAD1400001689D /* NaturalPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaturalPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C98F1C17BAD1400001689D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65C98F1E17BAD1400001689D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +98,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		65C64F5217BB98F80041EEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C64F5317BB98F80041EEB8 /* AudioToolbox.framework in Frameworks */,
+				65C64F5417BB98F80041EEB8 /* UIKit.framework in Frameworks */,
+				65C64F5517BB98F80041EEB8 /* Foundation.framework in Frameworks */,
+				65C64F5617BB98F80041EEB8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65C98F1617BAD1400001689D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,6 +142,7 @@
 				65C98F4617BAD1410001689D /* NaturalPomoTests */,
 				65C98F1B17BAD1400001689D /* Frameworks */,
 				65C98F1A17BAD1400001689D /* Products */,
+				65C64F6417BB98F80041EEB8 /* NaturalPomo copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +151,7 @@
 			children = (
 				65C98F1917BAD1400001689D /* NaturalPomo.app */,
 				65C98F3F17BAD1410001689D /* NaturalPomoTests.octest */,
+				65C64F6317BB98F80041EEB8 /* NaturalPomo copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +223,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		65C64F4C17BB98F80041EEB8 /* SwipeTimer  */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C64F6017BB98F80041EEB8 /* Build configuration list for PBXNativeTarget "SwipeTimer " */;
+			buildPhases = (
+				65C64F4D17BB98F80041EEB8 /* Sources */,
+				65C64F5217BB98F80041EEB8 /* Frameworks */,
+				65C64F5717BB98F80041EEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwipeTimer ";
+			productName = NaturalPomo;
+			productReference = 65C64F6317BB98F80041EEB8 /* NaturalPomo copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		65C98F1817BAD1400001689D /* NaturalPomo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65C98F5117BAD1410001689D /* Build configuration list for PBXNativeTarget "NaturalPomo" */;
@@ -251,11 +299,27 @@
 			targets = (
 				65C98F1817BAD1400001689D /* NaturalPomo */,
 				65C98F3E17BAD1410001689D /* NaturalPomoTests */,
+				65C64F4C17BB98F80041EEB8 /* SwipeTimer  */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		65C64F5717BB98F80041EEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C64F5817BB98F80041EEB8 /* InfoPlist.strings in Resources */,
+				65C64F5917BB98F80041EEB8 /* Default.png in Resources */,
+				65C64F5A17BB98F80041EEB8 /* Default@2x.png in Resources */,
+				65C64F5B17BB98F80041EEB8 /* Default-568h@2x.png in Resources */,
+				65C64F5C17BB98F80041EEB8 /* ViewController.xib in Resources */,
+				65C64F5D17BB98F80041EEB8 /* icon.png in Resources */,
+				65C64F5E17BB98F80041EEB8 /* icon@2x.png in Resources */,
+				65C64F5F17BB98F80041EEB8 /* alarm-clock-1.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65C98F1717BAD1400001689D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +362,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		65C64F4D17BB98F80041EEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C64F4E17BB98F80041EEB8 /* main.m in Sources */,
+				65C64F4F17BB98F80041EEB8 /* AppDelegate.m in Sources */,
+				65C64F5017BB98F80041EEB8 /* ViewController.m in Sources */,
+				65C64F5117BB98F80041EEB8 /* Timer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65C98F1517BAD1400001689D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +435,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		65C64F6117BB98F80041EEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NaturalPomo/NaturalPomo-Prefix.pch";
+				INFOPLIST_FILE = "NaturalPomo copy-Info.plist";
+				PRODUCT_NAME = "NaturalPomo copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65C64F6217BB98F80041EEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NaturalPomo/NaturalPomo-Prefix.pch";
+				INFOPLIST_FILE = "NaturalPomo copy-Info.plist";
+				PRODUCT_NAME = "NaturalPomo copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		65C98F4F17BAD1410001689D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +572,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		65C64F6017BB98F80041EEB8 /* Build configuration list for PBXNativeTarget "SwipeTimer " */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C64F6117BB98F80041EEB8 /* Debug */,
+				65C64F6217BB98F80041EEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		65C98F1417BAD1400001689D /* Build configuration list for PBXProject "NaturalPomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
