@@ -14,17 +14,27 @@
     NSInteger chargeAtRelease;
     NSTimeInterval releaseDate;
     BOOL grabbed;
+    BOOL ringed;
 }
+
 -(NSString*) displayText;
 {
+    [self tick];
+    NSInteger seconds = charge % 60;
+    NSInteger minutes = charge / 60;
+    return [NSString stringWithFormat:@"%02ld:%02ld", (long) minutes, (long) seconds];
+}
+
+- (void) tick;
+{
+    NSInteger wasCharged = charge > 0;
     if (!grabbed) {
         charge = chargeAtRelease - ([self.clock secondsSinceEpoch] - releaseDate);
         charge = MAX(0, charge);
     }
-
-    NSInteger seconds = charge % 60;
-    NSInteger minutes = charge / 60;
-    return [NSString stringWithFormat:@"%02ld:%02ld", (long) minutes, (long) seconds];
+    if (wasCharged && (charge == 0)) {
+        [self.speaker ring];
+    }
 }
 
 -(void) grab;
@@ -42,8 +52,12 @@
 
 -(void) rotateBySeconds:(NSInteger)seconds;
 {
+    NSInteger wasCharged = initialCharge > 0;
     charge = initialCharge + seconds;
     charge = MAX(0, charge);
+    if (wasCharged && (charge == 0)) {
+        [self.speaker ring];
+    }
 }
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65C64EF917BB6FBF0041EEB8 /* AnHalfDischargedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C64EF817BB6FBF0041EEB8 /* AnHalfDischargedTimerTests.m */; };
+		65C64EFB17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C64EFA17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m */; };
+		65C64F4617BB957D0041EEB8 /* alarm-clock-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65C64F4517BB957D0041EEB8 /* alarm-clock-1.wav */; };
+		65C64F4B17BB964E0041EEB8 /* PomodoroRingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C64F4A17BB964E0041EEB8 /* PomodoroRingTests.m */; };
 		65C98F1D17BAD1400001689D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1C17BAD1400001689D /* UIKit.framework */; };
 		65C98F1F17BAD1400001689D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F1E17BAD1400001689D /* Foundation.framework */; };
 		65C98F2117BAD1400001689D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C98F2017BAD1400001689D /* CoreGraphics.framework */; };
@@ -26,10 +30,9 @@
 		65C98F5917BAD1E80001689D /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
 		65C98F5A17BAD1E80001689D /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5817BAD1E80001689D /* Timer.m */; };
 		65C98F5D17BAD8C60001689D /* AChargedTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */; };
-		65FC903917BAE71C006C0112 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903817BAE71C006C0112 /* Default@2x.png */; };
-		65FC903B17BAE71F006C0112 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903A17BAE71F006C0112 /* Default.png */; };
 		65FC903D17BAE787006C0112 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903C17BAE787006C0112 /* icon.png */; };
 		65FC903F17BAE78B006C0112 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FC903E17BAE78B006C0112 /* icon@2x.png */; };
+		65FC904117BAED45006C0112 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FC904017BAED45006C0112 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65C64EF817BB6FBF0041EEB8 /* AnHalfDischargedTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnHalfDischargedTimerTests.m; sourceTree = "<group>"; };
+		65C64EFA17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AChargedReleasedTimerTests.m; sourceTree = "<group>"; };
+		65C64F4517BB957D0041EEB8 /* alarm-clock-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-clock-1.wav"; sourceTree = "<group>"; };
+		65C64F4A17BB964E0041EEB8 /* PomodoroRingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroRingTests.m; sourceTree = "<group>"; };
 		65C98F1917BAD1400001689D /* NaturalPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaturalPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C98F1C17BAD1400001689D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65C98F1E17BAD1400001689D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,10 +74,9 @@
 		65C98F5717BAD1E80001689D /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		65C98F5817BAD1E80001689D /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AChargedTimerTests.m; sourceTree = "<group>"; };
-		65FC903817BAE71C006C0112 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		65FC903A17BAE71F006C0112 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		65FC903C17BAE787006C0112 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		65FC903E17BAE78B006C0112 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		65FC904017BAED45006C0112 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FC904117BAED45006C0112 /* AudioToolbox.framework in Frameworks */,
 				65C98F1D17BAD1400001689D /* UIKit.framework in Frameworks */,
 				65C98F1F17BAD1400001689D /* Foundation.framework in Frameworks */,
 				65C98F2117BAD1400001689D /* CoreGraphics.framework in Frameworks */,
@@ -102,8 +109,6 @@
 			children = (
 				65FC903E17BAE78B006C0112 /* icon@2x.png */,
 				65FC903C17BAE787006C0112 /* icon.png */,
-				65FC903A17BAE71F006C0112 /* Default.png */,
-				65FC903817BAE71C006C0112 /* Default@2x.png */,
 				65C98F2217BAD1400001689D /* NaturalPomo */,
 				65C98F4617BAD1410001689D /* NaturalPomoTests */,
 				65C98F1B17BAD1400001689D /* Frameworks */,
@@ -123,6 +128,7 @@
 		65C98F1B17BAD1400001689D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65FC904017BAED45006C0112 /* AudioToolbox.framework */,
 				65C98F1C17BAD1400001689D /* UIKit.framework */,
 				65C98F1E17BAD1400001689D /* Foundation.framework */,
 				65C98F2017BAD1400001689D /* CoreGraphics.framework */,
@@ -134,6 +140,7 @@
 		65C98F2217BAD1400001689D /* NaturalPomo */ = {
 			isa = PBXGroup;
 			children = (
+				65C64F4517BB957D0041EEB8 /* alarm-clock-1.wav */,
 				65C98F2B17BAD1400001689D /* AppDelegate.h */,
 				65C98F2C17BAD1400001689D /* AppDelegate.m */,
 				65C98F3417BAD1400001689D /* ViewController.h */,
@@ -165,7 +172,10 @@
 			children = (
 				65C98F4D17BAD1410001689D /* ADischargedTimerTests.m */,
 				65C98F5B17BAD8C60001689D /* AChargedTimerTests.m */,
+				65C64EF817BB6FBF0041EEB8 /* AnHalfDischargedTimerTests.m */,
 				65C98F4717BAD1410001689D /* Supporting Files */,
+				65C64EFA17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m */,
+				65C64F4A17BB964E0041EEB8 /* PomodoroRingTests.m */,
 			);
 			path = NaturalPomoTests;
 			sourceTree = "<group>";
@@ -255,10 +265,9 @@
 				65C98F3117BAD1400001689D /* Default@2x.png in Resources */,
 				65C98F3317BAD1400001689D /* Default-568h@2x.png in Resources */,
 				65C98F3917BAD1400001689D /* ViewController.xib in Resources */,
-				65FC903917BAE71C006C0112 /* Default@2x.png in Resources */,
-				65FC903B17BAE71F006C0112 /* Default.png in Resources */,
 				65FC903D17BAE787006C0112 /* icon.png in Resources */,
 				65FC903F17BAE78B006C0112 /* icon@2x.png in Resources */,
+				65C64F4617BB957D0041EEB8 /* alarm-clock-1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +316,9 @@
 				65C98F4E17BAD1410001689D /* ADischargedTimerTests.m in Sources */,
 				65C98F5A17BAD1E80001689D /* Timer.m in Sources */,
 				65C98F5D17BAD8C60001689D /* AChargedTimerTests.m in Sources */,
+				65C64EF917BB6FBF0041EEB8 /* AnHalfDischargedTimerTests.m in Sources */,
+				65C64EFB17BB6FDD0041EEB8 /* AChargedReleasedTimerTests.m in Sources */,
+				65C64F4B17BB964E0041EEB8 /* PomodoroRingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

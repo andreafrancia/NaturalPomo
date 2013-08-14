@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Timer.h"
+#import <AudioToolbox/AudioServices.h>
+
 @implementation NSSet(touches)
 -(CGPoint) locationInView:(UIView*) view{
     UITouch *touch = [self anyObject];
@@ -18,6 +20,7 @@
 @implementation ViewController  {
     Timer * timer;
     CGPoint gestureStartPoint;
+    SystemSoundID soundID;
 }
 
 -(NSTimeInterval)secondsSinceEpoch;
@@ -30,16 +33,22 @@
     [super viewDidLoad];
     timer = [Timer new];
     timer.clock = self;
+    timer.speaker = self;
     [self refresh];
 	[NSTimer scheduledTimerWithTimeInterval:0.1
                                      target:self
                                    selector:@selector(refresh)
                                    userInfo:nil
                                     repeats:YES];
+    // prepare sound
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"alarm-clock-1" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)([NSURL fileURLWithPath:path]), &soundID);
 }
+
 
 -(void)refresh
 {
+    [timer tick];
     self.display.text = timer.displayText;
 }
 
@@ -70,10 +79,14 @@
     [timer rotateBySeconds: secondsSwiped];
 }
 
--(CGFloat) movementFromGestureStrartingPoint:(NSSet*) touches
+- (CGFloat) movementFromGestureStrartingPoint:(NSSet*) touches
 {
     CGPoint currentPosition = [touches locationInView:self.view];
     return currentPosition.x - gestureStartPoint.x;
 }
 
+- (void) ring;
+{
+    AudioServicesPlaySystemSound(soundID);
+}
 @end

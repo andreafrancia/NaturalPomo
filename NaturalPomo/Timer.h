@@ -10,11 +10,16 @@
 @protocol Clock
 -(NSTimeInterval)secondsSinceEpoch;
 @end
+@protocol Speaker
+-(void)ring;
+@end
 
 @interface Timer : NSObject
 @property id<Clock> clock;
--(NSString*) displayText;
--(void) grab;
--(void) ungrab;
--(void) rotateBySeconds:(NSInteger)seconds;
+@property id<Speaker> speaker;
+- (NSString*) displayText;
+- (void) tick;
+- (void) grab;
+- (void) ungrab;
+- (void) rotateBySeconds:(NSInteger)seconds;
 @end

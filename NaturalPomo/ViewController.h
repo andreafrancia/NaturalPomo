@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Timer.h"
-@interface ViewController : UIViewController<Clock>
+@interface ViewController : UIViewController<Clock, Speaker>
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
 @end
